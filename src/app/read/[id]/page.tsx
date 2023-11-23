@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 
 // interface Props {
 //     id: string;
@@ -15,6 +14,6 @@ import { useRouter } from "next/router";
 // };
 
 //export default Read
-export default function Page({ params }: { params: { slug: string } }) {
-    return <div>My Post: {params.slug}</div>
+export default function Page({ params }: { params: { id: string } }) {
+    return <div>My Post: {params.id}</div>
 }
